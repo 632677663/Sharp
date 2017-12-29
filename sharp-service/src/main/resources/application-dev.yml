@@ -1,0 +1,14 @@
+server:
+  port: 8087
+logging:
+  config: classpath:log4j2.xml
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://192.168.80.44:3306/scorpio?useUnicode=true&characterEncoding=utf-8&useSSL=false
+      username: root
+      password: 123456
+      initial-size: 5
+      max-active: 10
+      min-evictable-idle-time-millis: 100000
