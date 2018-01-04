@@ -18,6 +18,11 @@
                 </exclusion>
             </exclusions>
         </dependency>
+        <!-- freemarker -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-freemarker</artifactId>
+        </dependency>
         <!-- swagger2 -->
         <dependency>
             <groupId>io.springfox</groupId>
@@ -37,6 +42,16 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
             <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.scorpio.spring.dubbo</groupId>
+            <artifactId>dubbo-spring-boot-starter</artifactId>
+            <version>${dubbo.starter.version}</version>
+        </dependency>
+        <!-- api -->
+        <dependency>
+            <groupId>org.scorpio.sharp</groupId>
+            <artifactId>sharp-api-client</artifactId>
         </dependency>
     </dependencies>
     <build>

@@ -17,6 +17,8 @@
         <druid.version>1.1.6</druid.version>
         <mysql.version>5.1.45</mysql.version>
         <mybatis.version>1.3.1</mybatis.version>
+        <dubbo.starter.version>0.0.1-SNAPSHOT</dubbo.starter.version>
+        <sharp.version>0.0.1-SNAPSHOT</sharp.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -48,11 +50,24 @@
                 <artifactId>mybatis-spring-boot-starter</artifactId>
                 <version>${mybatis.version}</version>
             </dependency>
+            <!-- dubbo -->
+            <dependency>
+                 <groupId>org.scorpio.spring.dubbo</groupId>
+                 <artifactId>dubbo-spring-boot-starter</artifactId>
+                 <version>${dubbo.starter.version}</version>
+            </dependency>
+            <!-- api -->
+            <dependency>
+                 <groupId>org.scorpio.sharp</groupId>
+                 <artifactId>sharp-api-client</artifactId>
+                 <version>${sharp.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
     <modules>
         <module>sharp-cms</module>
         <module>sharp-core</module>
+        <module>sharp-api-client</module>
     </modules>
 </project>
