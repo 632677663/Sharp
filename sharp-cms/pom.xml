@@ -46,7 +46,6 @@
         <dependency>
             <groupId>org.scorpio.spring.dubbo</groupId>
             <artifactId>dubbo-spring-boot-starter</artifactId>
-            <version>${dubbo.starter.version}</version>
         </dependency>
         <!-- api -->
         <dependency>
